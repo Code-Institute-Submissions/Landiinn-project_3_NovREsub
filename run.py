@@ -13,6 +13,7 @@ def print_board(board):
     for row in board:
         print("%d|%s|" % (row_number, "|".join(row)))
         row_number += 1
+    print("\n")
 
 
 letters_to_numbers = {
@@ -38,12 +39,12 @@ def create_ships(board):
 def get_ship_location():
     row = input("Enter the row of the ship: ").upper()
     while row not in "12345678":
-        print("Unvalid Choice, Please select a valid option")
-        row = input("Enter the row: ").upper()
+        print("Invalid Choice, Please select a valid option \n")
+        row = input("Enter the row of the ship: ").upper()
+    column = input("Enter the column: ").upper()
+    while column not in "ABCDEFGH":
+        print("Invalid option \n")
         column = input("Enter the column: ").upper()
-        while column not in "ABCDEFGH":
-            print("Unvalid option")
-            column = input("Enter column").upper()
     return int(row) - 1, letters_to_numbers[column]
 
 
@@ -60,7 +61,7 @@ if __name__ == "__main__":
     create_ships(HIDDEN_BOARD)
     turns = 10
     while turns > 0:
-        print("Pick a location")
+        print("Pick a location \n")
         print_board(GUESS_BOARD)
         row, column = get_ship_location()
         if GUESS_BOARD[row][column] == "-":
