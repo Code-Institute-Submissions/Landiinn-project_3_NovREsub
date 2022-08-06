@@ -25,3 +25,5 @@ link to youtube is: https://www.youtube.com/watch?v=tF1WRCrd_HQ
 
 Credits to this youtuber called "Knowledge Mavens"
 Credits to my Mentor for helping me troubleshooting my codes and adding some better visual apperance.
+
+This was a fun but difficult task to complete. But I learned a lot on the way. And knowledge is key.
