@@ -1,44 +1,24 @@
-import gspread
-from google.oauth2.service_account import Credentials
+from random import randint
 
-SCOPE = [
-    "https://www.googleapis.com/auth/spreadsheets",
-    "https://www.googleapis.com/auth/drive.file",
-    "https://www.googleapis.com/auth/drive"
-    ]
+HIDDEN_BOARD = [[" "] * 8 for x in range(8)]
 
-CREDS = Credentials.from_service_account_file('creds.json')
-SCOPED_CREDS = CREDS.with_scopes(SCOPE)
-GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
-SHEET = GSPREAD_CLIENT.open('project_3')
+GUESS_BOARD = [[" "] * 8 for i in range(8)]
 
-inventory = SHEET.worksheet('inventory')
+def print_board(board):
+    print("  A B C D E F G H")
+    print("  +-+-+-+-+-+-+-+")
+    row_number = 1
+    for row in board:
+        print("%d|%s|" % (row_number, "|".join(row)))
+        row_number += 1
 
-input(type("What do you want to do?"))
-print("1. Add items to inventory")
-print("2. Remove items from inventory")
-print("3. View Inventory")
-
-
-def add_item():
-
-    if type == int(1):
-        print("What items do you want to add, and how many?")
-
-        user_input = input("Enter: ")
-
-        inventory = user_input
-
-    return inventory
-
-   
-def update_inventory(data):
-
-    print("Adding items to inventory...\n")
-    inventory_worksheet = SHEET.worksheet("inventory")
-    inventory_worksheet.append_row(data)
-    print("Items added to inventory\n")
-
-
-data = add_item()
-update_inventory(inventory)
+letters_to_numbers = {
+    'A': 0,
+    'B': 1,
+    'C': 2,
+    'D': 3,
+    'E': 4,
+    'F': 5,
+    'G': 6,
+    'H': 7
+}
