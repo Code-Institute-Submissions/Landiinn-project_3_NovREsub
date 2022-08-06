@@ -1,31 +1,27 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+My Battleship game
 
-Welcome Landiinn,
+Welcome to my project 3 assesment, Python.
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+In this game, the rules are simple. 
+You got 10 turns to find and eliminate the enemy ship.
 
-## Reminders
+Failure to hit the enemy will result in Game Loss.
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+You first make a choice of what row number you want to shot at. The numbers are 1-8.
+Then, you pick the line using a letter between A-H, in alphabetic order.
 
-## Creating the Heroku app
+<img src=/workspace/project_3/screenshot1.png>
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+<img src=/workspace/project_3/screenshot2.png>
 
-1. `heroku/python`
-2. `heroku/nodejs`
+<img src=/workspace/project_3/screenshot3.png>
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+The game is a simple, but difficult entertanment game.
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+The Python code was ran through a validator. Link here: https://extendsclass.com/python-tester.html
 
-Connect your GitHub repository and deploy as normal.
+This program was created alongside a Youtube- tutorial. 
+link to youtube is: https://www.youtube.com/watch?v=tF1WRCrd_HQ
 
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
------
-Happy coding!
+Credits to this youtuber called "Knowledge Mavens"
+Credits to my Mentor for helping me troubleshooting my codes and adding some better visual apperance.
