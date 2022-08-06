@@ -22,3 +22,12 @@ letters_to_numbers = {
     'G': 6,
     'H': 7
 }
+
+def create_ships(board):
+    for ship in range(5):
+        ship_row, ship_column = randint(0,7)
+        while board[ship_row][ship_column] == "X":
+            ship_row, ship_column = get_ship_location()
+        board[ship_row][ship_column = "X"]
+
+        
