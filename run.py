@@ -30,4 +30,13 @@ def create_ships(board):
             ship_row, ship_column = get_ship_location()
         board[ship_row][ship_column = "X"]
 
-        
+
+def get_ship_location():
+    row = input("Enter the row of the ship: ")
+    while row not in "12345678":
+        print("Unvalid Choice, Please select a valid option")
+        row = input("Enter the row: ")
+        column = input("Enter the column: ")
+    return int(row) -1, letters_to_numbers[column]
+
+    
