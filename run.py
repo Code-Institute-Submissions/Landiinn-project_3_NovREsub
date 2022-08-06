@@ -1,4 +1,6 @@
-from random import randint
+from random import randint 
+
+PORT = 8000 
 
 HIDDEN_BOARD = [[" "] * 8 for x in range(8)]
 
@@ -64,7 +66,7 @@ if __name__ == "__main__":
         print("Pick a location \n")
         print_board(GUESS_BOARD)
         row, column = get_ship_location()
-        if GUESS_BOARD[row][column] == "-":
+        if GUESS_BOARD[row][column] == "-" or GUESS_BOARD[row][column] == "X":
             print("You have picked that one already")
         elif HIDDEN_BOARD[row][column] == "X":
             print("Hit")
@@ -77,6 +79,6 @@ if __name__ == "__main__":
         if count_hit_ships(GUESS_BOARD) == 5:
             print("Winner!")
             break
-        print("You have " + str(turns) + "turns left")
+        print("You have " + str(turns) + " turns left\n")
         if turns == 0:
             print("You are out of turns")
