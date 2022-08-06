@@ -36,11 +36,14 @@ def create_ships(board):
 
 
 def get_ship_location():
-    row = input("Enter the row of the ship: ")
+    row = input("Enter the row of the ship: ").upper()
     while row not in "12345678":
         print("Unvalid Choice, Please select a valid option")
-        row = input("Enter the row: ")
-        column = input("Enter the column: ")
+        row = input("Enter the row: ").upper()
+        column = input("Enter the column: ").upper()
+        while column not in "ABCDEFGH":
+            print("Unvalid option")
+            column = input("Enter column").upper()
     return int(row) - 1, letters_to_numbers[column]
 
 
