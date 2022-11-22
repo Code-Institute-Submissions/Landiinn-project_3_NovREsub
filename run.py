@@ -60,7 +60,7 @@ def count_hit_ships(board):
 
 
 if __name__ == "__main__":
-    {create_ships(HIDDEN_BOARD)
+    create_ships(HIDDEN_BOARD)
     turns = 10
     while turns > 0:
         print("Pick a location \n")
@@ -82,4 +82,4 @@ if __name__ == "__main__":
         print("You have " + str(turns) + " turns left\n")
         if turns == 0:
             print("You are out of turns")
-    }
+    
