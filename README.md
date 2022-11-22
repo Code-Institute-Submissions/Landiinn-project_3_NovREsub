@@ -10,11 +10,17 @@ Failure to hit the enemy will result in Game Loss.
 You first make a choice of what row number you want to shot at. The numbers are 1-8.
 Then, you pick the line using a letter between A-H, in alphabetic order.
 
-<img src=/workspace/project_3/screenshot1.png>
+In order to create this, I started with the idea. 
+I first thought of something like a inventory app. But since I have always been a gamer, I saw to it to create a game instead.
+Now, this was beyond what I had learned, so in order to create something, I had to follow a youtube tutorial. 
+Following the tutorial helped me with the structure, but I still have a lot to learn. That is how it goes for every programming language. You can never learn enough.
+With a strict deadline, this was unfourtnely my only option. 
 
-<img src=/workspace/project_3/screenshot2.png>
+<img src=screenshot1.png>
 
-<img src=/workspace/project_3/screenshot3.png>
+<img src=screenshot2.png>
+
+<img src=screenshot3.png>
 
 The game is a simple, but difficult entertanment game.
 
